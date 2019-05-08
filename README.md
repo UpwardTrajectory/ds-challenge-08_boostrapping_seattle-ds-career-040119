@@ -1,15 +1,13 @@
-# Bootstrapping Challenge
+# Bootstrapping Challenge - Team Kaspar & Hussein
 
-## Instructions
+## Dataset: UW-Madison Wisconsin grades
+found [here (link to kaggle.com)](https://www.kaggle.com/Madgrades/uw-madison-courses)
 
-With your pair partner, use bootstrapping to estimate a confidence interval for a statistic that's of interest to you in your Mod 2 project.
-
-* Fork this repo.
-* Create a new notebook documenting the process.
-* Replace this README file with one that documents your work and includes a link to your notebook.
-* Add, commit, and push your changes.
-* Share a link to your fork in #seattle-ds-040119-git
+We anaylyzed the overall average GPA from all classes that reported A-F style, completely omitting any (pass / fail) or 
+other student achievement reporting methods. After transforming the possible grades:  [A, AB, B, BC, C, D, F] onto the 
+4.0 GPA scale, we computed the weighted average based on class size for the entire dataset. We then randomly sampled 2000 
+records and computed a confidence interval for the population mean GPA utilizing bootstrapping for an emperical result.
 
 ## Resources
 
-* [Bootstrapping Demo Notebook](bootstrap-demo.ipynb)
+* [Bootstrapping Demo Notebook](uw_mad_grades_bootstrapping.ipynb)
